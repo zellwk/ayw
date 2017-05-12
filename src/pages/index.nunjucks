@@ -1,0 +1,37 @@
+---
+data: ['./data/chapters.json', './data/faq.json']
+---
+{% extends 'layout.nunjucks' %}
+
+{# Set Cache http://stackoverflow.com/questions/12556593/determining-a-page-is-outdated-on-github-pages #}
+
+{% block title %} <title>{{siteTitle}} | {{siteDescription}}</title> {% endblock %}
+{% block desc %} <meta name="description" content="{{siteDescription}}" />{% endblock %}
+{% block canonical %} <link rel="canonical" href="{{siteUrl}}"> {% endblock %}
+
+{% block content %}
+
+<article>
+  <section>
+    {% include "partials/intro.nunjucks" %}
+    {% markdown "fragments/s2.md" %}
+    {% markdown "fragments/s3.md" %}
+    {% include "partials/s4.nunjucks" %}
+    {% include "partials/sample.nunjucks" %}
+  </section>
+  <section> {% include "partials/author.nunjucks" %} </section>
+  <section> {% include "partials/toc.nunjucks" %} </section>
+  <section> 
+    <h2 id="packages">The packages</h2>
+    {% include "partials/packages.nunjucks" %} 
+  </section>
+  <section> {% markdown "fragments/worth.md" %} </section>
+  <section> {% include "partials/testimonials.nunjucks" %} </section>
+  <section> {% include "partials/faq.nunjucks" %} </section>
+   <section> 
+    <h2 id="packages">Are you ready to automate your workflow?</h2>
+    {% include "partials/packages.nunjucks" %} 
+  </section>
+</article>
+
+{% endblock %}

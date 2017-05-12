@@ -1,0 +1,16 @@
+<h2>What do others say about the book?</h2>
+
+<div class="quote">
+  <blockquote>
+    <p>It's thorough, relevant, well-paced and offers a wealth of information on the many ways a properly implement build system can help you simplify and speed up your web development. </p>
+    <cite> &mdash; Charlie Gleason, head of product at Unbound.</cite>
+  </blockquote>
+</div>
+
+<div class="quote">
+  <blockquote>
+    <p>"Automating your workflow" is a gentle introduction to making your life easier by using Gulp. I found it extremely easy to follow along. The book discusses the steps in a workflow in a friendly manner and outlines all required code in detail.</p>
+    <p>I got quite a bit of confidence using Gulp and I think I'll be able to use Gulp in a productive manner. Setting up my workflow will also be reasonably painless.</p>
+    <cite> &mdash; Christian Hettlage, software engineer</cite>
+  </blockquote>
+</div>

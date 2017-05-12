@@ -1,0 +1,34 @@
+{% markdown  %} 
+## Sounds awesome? Get 10 Chapters for free! 
+
+Ten chapters is a quarter of the book. In these first ten chapters, we'll talk about your heart burning questions like how to choose what tools to use for your workflow, and how to learn the absolute basics of Gulp. At the end of chapter 10, you'd have crafted a decent workflow that already saves you a lot of time. 
+{% endmarkdown %}
+
+<div class="ck_form ck_vertical_subscription_form">
+  <div class="ck_form_fields">
+    <!--  Form starts here  -->
+    <div id="ck_success_msg" style="display:none;"></div>
+    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/2590/subscribe" data-remote="true">
+      <input type="hidden" value="{&quot;embed_style&quot;:&quot;inline&quot;,&quot;embed_trigger&quot;:&quot;scroll_percentage&quot;,&quot;scroll_percentage&quot;:&quot;70&quot;,&quot;delay_seconds&quot;:&quot;10&quot;,&quot;display_position&quot;:&quot;br&quot;,&quot;display_devices&quot;:&quot;all&quot;,&quot;days_no_show&quot;:&quot;15&quot;}" id="ck_form_options"></input>
+      <input type="hidden" name="id" value="987" id="landing_page_id"></input>
+      <div class="ck_control_group">
+        <input type="text" name="email" class="ck_email_address" id="ck_emailField" required></input>
+        <label class="ck_label" for="ck_emailField" placeholder="Email Address" alt="Email"></label>
+      </div>
+      <div class="ck_control_group">
+        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required></input>
+        <label class="ck_label" for="ck_firstNameField" placeholder="First Name" alt="Name"></label>
+      </div>
+      <label class='ck_checkbox' style='display:none;'>
+        <input class="optIn ck_course_opted" name='course_opted' type="checkbox" id="optIn" checked />
+        <span class='ck_opt_in_prompt'><p>I'd like to receive a free 30 day course by email.</p></span>
+      </label>
+      <div>
+      <button class="btn" id='ck_subscribe_button'>
+          Send me the chapters!
+        </button>
+      </div>
+    </form>
+
+  </div>
+</div>

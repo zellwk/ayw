@@ -1,0 +1,27 @@
+{
+  // Note: Data cannot be hyphenated. Nunjucks don't parse them well. 
+  // Use Camel Case or All Caps instead.
+
+  // Basic Site info
+  "siteTitle": "Automating Your Workflow",
+  "siteEmail": "zellwk@gmail.com",
+  "siteDescription": "Learn how to create an automated workflow using Gulp",
+  "siteUrl": "http://automateyourworkflow.com",
+
+  // Social Media 
+  "twitterHandle": "@zellwk",
+  "googlePlusUrl": "some-url",
+
+  // SEO (Not placed in templates yet)
+  "ogImage": "some-url", // Should be 1200x630
+  "twitterImage": "some-url", // should be 120x120
+
+  // Webmaster tools
+  "webmasterToolsUrl": "",
+  "bingUrl": "",
+  
+  // Analytics 
+  "googleAnalytics": ""
+
+  // Additional data as needed
+}

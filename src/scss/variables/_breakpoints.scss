@@ -1,0 +1,22 @@
+
+// Breakpoints Map
+// ---------------
+// Stores variables for all breakpoints used for the site. 
+// - Uses the `mappy-bp()` mixin to output values min-width or max-with. 
+// - Optionally allows for portrait or landscape orientation
+// 
+// See https://github.com/zellwk/mappy-breakpoints for more info. 
+// ================
+
+$breakpoints: (
+  'small' : 400px,
+  'med'   : 680px,
+  'large' : 900px,
+  'wide'  : 1100px,
+  'wider' : 1240px,
+  'mega'  : 1450px,
+  );
+
+$queries: (
+  'tablet' : bp(med wide),
+  );

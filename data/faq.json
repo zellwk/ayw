@@ -1,0 +1,27 @@
+{
+  "faqs": [{
+    "q": "Will this workflow work for everyone?",
+    "a": "Yes, the workflow we're building works on all operating systems. It doesn't matter if you use Windows, Mac or Linux. It'll work on everything."
+  }, {
+    "q": "I'm afraid of spending too much time on creating my workflow.",
+    "a": "Building an automated workflow is one of the best investments you'll ever make for your development career because it will drastically shorten the time you spend on coding. <br><br> I suggest you give yourself a time limit, work through the book and use the workflow we spelled out in there. Once you have a decent workflow, consider crafting your personalized one with the extra free time. It'll be worth it"
+  }, {
+    "q": "What makes this different from the other Gulp books?",
+    "a": "This book is different because it doesn't focus only on Gulp. It aims to equip you with the knowledge to use any tool, even if something better than Gulp pops up. Plus, we're going to be making a real workflow. Which book does that?"
+  }, {
+    "q": "What if I already know Gulp? ",
+    "a": "You're going to love the book if you're unsure whether you're doing things correctly, or if you feel that you can improve parts of your workflow. If not, free feel to skip this book."
+  }, {
+    "q": "What version of Gulp are we using?",
+    "a": "We're using Gulp 3.9. I'll update the book to work with Gulp 4.0 once it's out, and you can have this upgrade for free."
+  }, {
+    "q": "Do you do refunds?",
+    "a": "Yes, I only want your money if you're happy with the book. If you don't like it for any reason, just send me an email with your receipt within 30 days and I'll refund you."
+  }, {
+    "q": "Where do I learn more about you?",
+    "a": "Feel free to look around <a href='http://zell-weekeat.com'>my blog</a> to find out more about how I write and teach."
+  }, {
+    "q": "What if I have more questions?",
+    "a": "Just send me an email at <a href='mailto:zellwk@gmail.com'>zellwk@gmail.com</a> and I'll be back shortly with a reply. Ask anything you want!"
+  }]
+}

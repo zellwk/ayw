@@ -1,0 +1,300 @@
+body {
+  // background: #fafafa;
+}
+
+.intro p {
+  max-width: 100%;
+}
+
+.Book-img {
+  @include bp(max med) {
+    width: 300px;
+  }
+}
+
+.quote {
+  border-left: 0.25rem solid color(carnation);
+  margin: rhythm(1) 0;
+  padding: 1em rhythm(1);
+
+  img {
+    display: none;
+  }
+
+  cite {
+    font-size: 0.8em;
+    font-weight: bold;
+  }
+}
+
+.u-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Author {
+  @include font-size($quote-font-map);
+
+  display: flex;
+  flex-wrap: wrap;
+
+  @include bp(med) {
+    flex-wrap: nowrap;
+  }
+
+
+  img {
+    order: -1;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    margin-left: 2em;
+    margin-top: rhythm(0.25);
+    margin-bottom: rhythm(1);
+
+    @include bp(med) {
+      order: 1;
+      width: 200px;
+      height: 200px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.Cards {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include bp(med) {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+}
+
+.Card {
+  overflow: hidden;
+  position: relative;
+  flex-basis: 100%;
+  margin-bottom: rhythm(1);
+
+  @include bp(med) {
+    @include font-size($h6-font-map);
+
+    flex: 1 0 calc(50% - 20px);
+    margin: 10px;
+    border: 3px solid color(carnation);
+    border-top: rhythm(0.5) solid color(carnation);
+
+    // border-radius: 3px;
+    padding: rhythm(0.75) rhythm(0.75);
+  }
+
+
+  p {
+    max-width: 100%;
+  }
+}
+
+.Card__title {
+  @include ff(header);
+
+  font-weight: bold;
+  margin-bottom: rhythm(0.25);
+
+  // color: color(carnation);
+}
+
+.Card__desc,
+.Card__chapters {
+  @include bp(med) {
+    font-size: 0.9em;
+  }
+}
+
+.Card__chapters {
+  display: none;
+  margin-top: 1em;
+
+  .Card.is-show & {
+    display: block;
+  }
+}
+
+.Packages {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include bp(med) {
+    flex-wrap: nowrap;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+
+  @include bp(wide) {
+    margin-left: rhythm(-3);
+    margin-right: rhythm(-3);
+  }
+}
+
+.Package {
+  flex: 1 0 100%;
+  padding: rhythm(1);
+  margin: rhythm(0.5) 0;
+  border: 3px solid #ccc;
+  counter-reset: package;
+
+  @include bp(med) {
+    flex: 1 0 calc(#{percentage(5 / 12)} - 10px);
+    margin: 10px;
+    font-size: 0.8rem;
+  }
+
+
+  .Package__title {
+    height: rhythm(1);
+    line-height: 1;
+    margin-bottom: rhythm(1);
+  }
+
+  .btn {
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+
+    @include ff(text);
+  }
+
+  ol {
+    padding-left: 1em;
+  }
+
+  li {
+    counter-increment: package;
+    list-style: none;
+    margin: 0.25em 0;
+
+    &:before {
+      content: counter(package) ". ";
+    }
+  }
+}
+
+.Package--em {
+  @extend .Package;
+
+  flex: 1 0 calc(#{percentage(7 / 12)} - 20px);
+  border: rhythm(0.25) solid color(carnation);
+
+  .Package__title {
+    color: color(carnation);
+    font-weight: bold;
+  }
+}
+
+.Package__cta {
+  margin-top: 1em;
+}
+
+.FAQ {
+  dt {
+    font-weight: bold;
+    margin-top: 1em;
+  }
+
+  dd {
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
+
+.btn {
+  @include ff(header);
+
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.5em 0.75em;
+  border: 2px solid color(carnation);
+  border-radius: 3px;
+  transition: 0.15s all ease-out;
+  background: color(manz);
+  color: color(costa);
+  font-weight: 700;
+  background: color(carnation);
+  color: white;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border: 2px solid color(manz);
+    transition: none;
+    background: color(manz);
+    color: color(costa);
+  }
+}
+
+.btn--ghost {
+  @extend .btn;
+
+  font-weight: normal;
+  background: transparent;
+  border-color: color(carnation);
+  color: color(carnation);
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: color(carnation);
+    border-color: color(carnation);
+    color: white;
+  }
+}
+
+.btn.is-disabled {
+  border-color: #ddd;
+  color: #ddd;
+  background: transparent;
+
+  &:hover,
+  &:active,
+  &:focus {
+    cursor: default;
+    border-color: #ddd;
+    color: #ddd;
+    background: transparent;
+  }
+}
+
+$adaptive-placeholder: (
+  height: 2.5em,
+  margin: 1em,
+  border: 1px,
+  border-radius: 3px,
+  font-size: 1em,
+  border-color: #cccccc,
+  label-color: #999999,
+  active-color: color(carnation),
+  placeholder-background-color: white,
+  textarea: false
+  );
+
+// FORM
+.ck_form {
+  margin-top: 1em;
+
+  .ck_control_group {
+    display: inline-block;
+    margin-right: 0.5em;
+  }
+
+  input {
+    @include adaptive-placeholder;
+  }
+
+  .subscribe_button {
+    margin-top: rhythm(0.5);
+    border-radius: 40px;
+    text-transform: none;
+  }
+}

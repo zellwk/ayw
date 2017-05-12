@@ -1,0 +1,55 @@
+<div class="intro">
+  {% markdown %}
+
+  # Want to learn how to create an automated development workflow? 
+
+  {% endmarkdown %}
+
+  <img class="Book-img" src="/images/book-cover-a4.jpg" alt="">
+
+  {% markdown %}
+  An automated workflow helps you out with tasks you do when creating websites. It can help you free up loads of time, and make projects fun again. 
+  {% endmarkdown %}
+
+  <div class="quote">
+    <blockquote>
+      <p>
+        The greatest benefit I got from creating a good workflow is the removal of tedious, manual work. Now, <strong>I get to focus on the more fun parts of work like the creative tasks</strong>. I have also experienced a drop in the number of errors, simply because it becomes easier to handle work since Gulp is doing all the error catching for me.
+      </p>  
+      <img src="/images/klaus.jpg" alt="">
+      <cite> &mdash; Klaus Jørgensen, <span>freelance frontend developer</span></cite>
+    </blockquote>
+    {# <img src="/images/klaus.jpg" alt=""> #}
+  </div>
+
+  {% markdown %}
+
+  **Just imagine you managed to free up one hour a day by using an automated workflow**. How would you use this time? Would you create more awesome projects, design insanely creative websites, or would you spent it lazing on the couch with the comfort of your family? 
+
+  Now, imagine if you could free up one hour a day for everyone in your team. How much happier would they be? How much faster would things get done? What would everyone do with the extra time? 
+  
+  Interested? [Jump to the packages](#packages)
+  
+  {% endmarkdown %}
+</div>
+
+{% markdown %}
+## So, what's an automated workflow?
+
+An automated workflow is a set of pre-programmed commands. It aims to help you simplify the tasks you do on a daily basis. These tasks can be things like: 
+
+1. **Updating a file whenever it is changed** so you don't have to run a command to update it. 
+2. **Refreshing the browser automatically** when needed so you don't have to alt-tab and hit the refresh button manually. 
+3. **Letting you know what errors you made in your code** so you don't have to spend hours in frustration trying to find out what went wrong.
+4. **Letting you write modular code** (even HTML) so you don't have to update that god damned navigation five times whenever something needs to change.
+4. **Testing code whenever a developer merges the code** to a central repository to make sure that everything works well. If it's doesn't, you'll know it before any of your customers does, and you can make the necessary changes before they even know it.
+5. **Optimizing your CSS, JavaScript, images** and running every optimization you need to make sure your website is wicked fast.
+6. **Deploying your website with a single command** so you can remove the anxiety from being afraid that you'll mess up the deployment process you can in place. 
+7. and many more...
+
+There's a ton of things you can put together to make a superb workflow!
+
+
+{% endmarkdown %}
+
+

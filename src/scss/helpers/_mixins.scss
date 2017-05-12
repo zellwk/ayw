@@ -1,0 +1,159 @@
+// MIXINS
+// ------
+// General mixins for projects
+// ======
+
+// Clearfix
+// --------
+@mixin cf {
+  &:after {
+    content: ' ';
+    display: table;
+    clear: both;
+  }
+}
+
+// Font Smoothing
+// --------------
+// Mixin to turn on font smoothing, especially for light text on dark background for OSX
+@mixin font-smoothing($value: on) {
+  @if $value == on {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  @else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+}
+
+// Mappy Breakpoint shortcuts
+// 
+// BP [Mixin]
+// ----------
+// Convenience mixin for Mappy Breakpoints
+@mixin bp($queries, $type: all, $query-fallback: null, $breakpoints: $breakpoints) {
+  @include mappy-bp($queries, $type, $query-fallback, $breakpoints) {
+    @content;
+  }
+}
+
+@mixin query($query, $mappy-queries: $queries) {
+  @include mappy-query($query, $mappy-queries);
+}
+
+// Is-invisible
+// ------------
+// Makes element invisible, but still accessible
+// - http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+@mixin is-invisible {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  border: none;
+}
+
+// Is-visible
+// ----------
+// Turns off the element-invisible effect.
+@mixin is-visible {
+  position: static;
+  clip: auto;
+  height: auto;
+  width: auto;
+  overflow: auto;
+}
+
+// Placeholder
+// -----------
+// Changes Placeholder styles
+@mixin placeholder {
+  &::placholder {
+    @content;
+  }
+}
+
+// SELECTION
+// ---------
+// Changes selected color and background color
+@mixin selection($bg-color, $text-color) {
+  &::selection {
+    background: $bg-color;
+    color: $text-color;
+  }
+}
+
+// Text overflow
+// -------------
+// Requires inline-block or block for proper styling
+@mixin text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+// Z-index
+// -------
+@mixin zi($location) {
+  z-index: map-get($zindex, $location);
+}
+
+// Shape mixins
+// -----
+// Shapes availble within this mixin files are:
+// ==========
+
+// Square
+// ------
+@mixin square($size) {
+  @include size($size, $size);
+}
+
+// Circle
+// ------
+@mixin circle($width) {
+  width: $width;
+  height: $width;
+  border-radius: 100%;
+}
+
+// Triangle
+// --------
+// We use this to create isosceles triangles
+// - $triangle-size       - Used to set border-size. No default, set a px or em size.
+// - $triangle-color      - Used to set border-color which makes up triangle. No default
+// - $triangle-direction  - Used to determine which direction triangle points. 
+//                          Options: top, bottom, left, right
+@mixin triangle($triangle-size, $triangle-color, $triangle-direction) {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border: inset $triangle-size;
+
+  @if $triangle-direction == top {
+    border-color: $triangle-color transparent transparent;
+    border-top-style: solid;
+  }
+
+  @if $triangle-direction == bottom {
+    border-color: transparent transparent $triangle-color;
+    border-bottom-style: solid;
+  }
+
+  @if $triangle-direction == left {
+    border-color: transparent transparent transparent $triangle-color;
+    border-left-style: solid;
+  }
+
+  @if $triangle-direction == right {
+    border-color: transparent $triangle-color transparent transparent;
+    border-right-style: solid;
+  }
+}

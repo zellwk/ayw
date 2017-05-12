@@ -1,0 +1,12 @@
+*.gem
+.sass-cache
+.bundle
+dev
+dist
+*.log
+.publish
+*.lock
+node_modules
+bower_components
+
+stylesheets/modular-scale.zip

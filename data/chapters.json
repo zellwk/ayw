@@ -1,0 +1,85 @@
+{
+  "sections": [{
+    "title": "Introduction to Automation",
+    "desc": "Here, we walk through the basics of automation and show you things you need to know before you begin the journey. This will be where you get knowledge of things like the command line, what goes in a development workflow, and how to use Gulp.",
+    "chapters": [
+      "1. Why don’t people automate",
+      "2. Your First Obstacle To Automation",
+      "3. Overview of a Web Development Workflow ",
+      "4. Choosing Your Build Tool",
+      "5. Getting Started with Gulp",
+      "6. Structuring Your Project",
+      "7. Writing A Real Gulp Task "
+    ]
+  }, {
+    "title": "The Development Phase",
+    "desc": "We begin building the automated workflow at this phase, starting with the process of removing tedious and manual tasks you do. You will also learn how to use tools many modern tools for development.",
+    "chapters": [
+      "8. The Development Phase",
+      "9. Watching with Gulp",
+      "10. Live-reloading with Browser Sync",
+      "11. Automatic Vendor Prefixes with Autoprefixer ",
+      "12. Easier Debugging with Sourcemaps",
+      "13. Using CSS Sprites",
+      "14. JavaScript in the Development Phase",
+      "15. A JavaScript Workflow with Bower",
+      "16. Integrating Bower with Sass",
+      "17. Modularizing HTML with Template Engines",
+      "18. Tying up Development Tasks"
+    ]
+  }, {
+    "title": "The Testing Phase",
+    "desc": "You will learn what to test for, and how to test your code with you having to eyeball them manually.",
+    "chapters": [
+      "19. The Testing Phase",
+      "20. Linting JavaScript with JSHint and JSCS",
+      "21. Linting Sass with SCSSLint",
+      "22. JavaScript Unit Testing with Karma and Jasmine"
+    ]
+  }, {
+    "title": "The Integration Phase",
+    "desc": "You'll learn how to get a machine to test your code whenver you push it to a remote repository. Here, you'll ensure that you don't have to worry about your website breaking without knowing it.",
+    "chapters": [
+      "23. The Integration Phase",
+      "24. Committing and Pushing with Git",
+      "25. Continuous Integration with Travis",
+      "26. Testing Workflow with Travis"
+    ]
+  }, {
+    "title": "The Optimization Phase",
+    "desc": " This is where you prepare your website for production. We reduce your asset sizes and do everything we can to make sure your website is wicked fast. What's more, everything will be done in one simple step so you don't forget anything.",
+    "chapters": [
+      "27. The Optimization Phase",
+      "28. Optimizing JavaScript",
+      "29. Optimizing CSS",
+      "30. Optimizing Images",
+      "31. Speeding up the optimization process ",
+      "32. Cache Busting",
+      "33. Tying up the Optimization Phase"
+    ]
+  }, {
+    "title": "The Deployment Phase",
+    "desc": "The deployment phase shows you different ways to deploy your website quickly onto your servers without having copy and paste your files by FTPing in manually. Updating your site becomes less of a headache.",
+    "chapters": [
+      "34. The Deployment Phase",
+      "35. Deploying with Version Control",
+      "36. Deploying with Gulp"
+    ]
+  }, {
+    "title": "The Scaffolding Phase",
+    "desc": "Here, you'll learn how to use the workflow with other projects. You'll also learn how to update project dependencies easily.",
+    "chapters": [
+      "37. The Scaffolding Phase",
+      "38. Updating npm Dependencies ",
+      "39. Updating Bower Dependencies"
+    ]
+  }, {
+    "title": "Tying Everything Together",
+    "desc": "In the last section of the book, we go through how to organize your Gulpfile, how to find good plugins to use and what to do next after you've completed the book.",
+    "chapters": [
+      "40. Tying Everything Together",
+      "41. Cleaning Up The Gulpfile",
+      "42. What’s Next"
+    ]
+  }]
+}

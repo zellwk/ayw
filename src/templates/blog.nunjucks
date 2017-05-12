@@ -1,0 +1,37 @@
+{% extends 'layout.nunjucks' %}
+
+{% block canonical %} <link rel="canonical" href="{{permalink}}"> {% endblock %}
+{% block OGType %}<meta property="og:type" content="article"/>{% endblock %}
+
+{% block content %}
+
+<section>
+  This is a blog archive page. Shows 5 latests blog posts (configurable). 
+
+  <h2>You can also get global data in this page as well</h2>
+
+  <p>Site Title is: {{siteTitle}}</p>
+  <p>Site Email is: {{siteEmail}}</p>
+  <p>Site Description is {{siteDescription}}</p>
+  <p>Site url is {{siteUrl}}</p>
+
+  <h2>And here are some articles</h2>
+
+  {% for article in articles %}
+  <h4>article title: {{article.title}}</h4>
+  <p>Permalink is <a href="{{article.permalink}}">{{article.permalink}}</a></p>
+  <div>tags are:
+    <ul>
+      {% for tag in article.tags %}
+      <li> <a href="{{tag.permalink}}">{{tag.tag}}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+  <p>Summary content is: {{article.summary}}</p>
+  {% endfor %}
+  
+  {% if prevPage %}<a href="{{prevPagePermalink}}">Previous Page</a>{% endif %}
+  {% if nextPage %}<a href="{{nextPagePermalink}}">Next Page</a>{% endif %}
+
+</section>
+{% endblock %}

@@ -1,0 +1,37 @@
+
+{% markdown %}
+## What's in the book?
+
+There's a total of 8 sections, with 42 chapters worth of content.
+
+<a href="#" class="btn--ghost jsToggleToc">Show all chapters</a>
+{% endmarkdown %}
+
+<div class="Cards">
+  {% for section in sections %}
+    <div class="Card">
+      <div class="Card__title">{{loop.index}}. {{section.title}}</div>
+      <div class="Card__desc"><p>{{section.desc}}</p></div>
+      <div class="Card__chapters">
+        <strong>Chapters</strong>
+        {% for chapter in section.chapters %}
+          <div>{{chapter}}</div>
+        {% endfor %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+{% markdown  %} 
+
+## Bonus materials (for the Complete Package) 
+{# **Bonus #1: Building a workflow for Wordpress**<br>
+You may run into situations where you can't use the workflow we've created directly in your project. One of such situations is when you use a CMS. <br><br> You'll learn how to overcome these situations in this bonus by learning to tweak the workflow to work with Wordpress. #}
+
+**Bonus #1: Creating your own Gulp plugin**<br>
+You never have to wait for someone else to create a plugin you desperately need once you learn how to do so. For example, I created my own plugins to create PDF, ePub and Mobi versions of this book because nothing else out there seemed to work. <br><br>Learning to create plugins is key to unlock your ability to create any kind of workflow you want. You'll learn how a Gulp plugin works, and how to craft one in this bonus. 
+
+**Bonus #2: Access to my personal static-site generator**<br>
+The third bonus is that you'll get access to my static-site generator that I've built with Gulp. This static-site generator was the result of months of work that allows me to craft websites at an incredible speed. 
+
+{% endmarkdown %}
