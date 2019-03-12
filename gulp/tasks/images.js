@@ -1,16 +1,28 @@
-import gulp from 'gulp';
-import plugins from 'gulp-load-plugins';
-import browserSync from 'browser-sync';
+const gulp = require('gulp')
+const config = require('../config')
+const imagemin = require('gulp-imagemin')
+const newer = require('gulp-newer')
+const size = require('gulp-size')
 
-// Import configs
-import config from '../config';
+const isProd = config.env === 'prod'
 
-let $ = plugins();
+gulp.task('minify-images', () => {
+  return gulp.src('src/images/**/*')
+    .pipe((newer('dev/images')))
+    .pipe(imagemin(imageminOpts))
+    .pipe(gulp.dest('dev/images'))
+    .pipe(size({'title': 'images'}))
+})
 
-// TODO: Redo images task
-gulp.task('images', () => {
-  return gulp.src(config.images.src)
-  .pipe($.if(config.env === 'prod', $.imagemin(config.images.opts)))
-  .pipe($.size({'title': 'images'}))
-  .pipe(gulp.dest(config.images.dest));  
-});
+gulp.task('images', ['minify-images'], () => {
+  if (isProd) {
+    return gulp.src('dev/images/**/*')
+      .pipe(gulp.dest('dist/images'))
+  }
+})
+
+const imageminOpts = {
+  interlaced: true,
+  optimizationLevel: 5,
+  progressive: true
+}

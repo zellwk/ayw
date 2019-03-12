@@ -1,8 +1,7 @@
-import gulp from 'gulp';
-import browserSync from 'browser-sync';
-import config from '../config'
+const gulp = require('gulp')
+const browserSync = require('browser-sync')
+const config = require('../config')
 
-gulp.task('browserSync', function() {
-  browserSync(config.browserSync);
-});
-
+gulp.task('browserSync', function () {
+  browserSync(config.browserSync)
+})

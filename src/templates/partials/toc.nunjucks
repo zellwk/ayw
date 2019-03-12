@@ -4,6 +4,8 @@
 
 There's a total of 8 sections, with 42 chapters worth of content.
 
+(Note: Hey! AYW was written 2 years ago. Since then, technology has evolved, so you'll run into some errors in the testing phase. Don't worry about the errors in the testing phase. They're not going to stop you from creating the workflow you want. You'll still learn the thought process and workflow you need to think about testing, which is the valueable part. Once you understand Gulp, you'll be able to create your own testing phase with different tools out there as well).
+
 <a href="#" class="btn--ghost jsToggleToc">Show all chapters</a>
 {% endmarkdown %}
 
@@ -22,16 +24,15 @@ There's a total of 8 sections, with 42 chapters worth of content.
   {% endfor %}
 </div>
 
-{% markdown  %} 
+{% markdown  %}
 
-## Bonus materials (for the Complete Package) 
+## Bonus materials (for the Complete Package)
 {# **Bonus #1: Building a workflow for Wordpress**<br>
 You may run into situations where you can't use the workflow we've created directly in your project. One of such situations is when you use a CMS. <br><br> You'll learn how to overcome these situations in this bonus by learning to tweak the workflow to work with Wordpress. #}
 
 **Bonus #1: Creating your own Gulp plugin**<br>
-You never have to wait for someone else to create a plugin you desperately need once you learn how to do so. For example, I created my own plugins to create PDF, ePub and Mobi versions of this book because nothing else out there seemed to work. <br><br>Learning to create plugins is key to unlock your ability to create any kind of workflow you want. You'll learn how a Gulp plugin works, and how to craft one in this bonus. 
+You never have to wait for someone else to create a plugin you desperately need once you learn how to do so. For example, I created my own plugins to create PDF, ePub and Mobi versions of this book because nothing else out there seemed to work. <br><br>Learning to create plugins is key to unlock your ability to create any kind of workflow you want. You'll learn how a Gulp plugin works, and how to craft one in this bonus.
 
 **Bonus #2: Access to my personal static-site generator**<br>
-The third bonus is that you'll get access to my static-site generator that I've built with Gulp. This static-site generator was the result of months of work that allows me to craft websites at an incredible speed. 
-
+You'll also get access to my personal static-site generator that I built with Gulp. This static-site generator is used to run my main website, zellwk.com, and other sites that I create. I'm always updating it, so you can be assured that you're using the latest and bestest technologies that I know of.
 {% endmarkdown %}

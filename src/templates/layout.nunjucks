@@ -7,10 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   {% block css %}
-  <!--build:css /css/styles.min.css-->
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/styles.css">
-  <!--endbuild-->
   {% endblock %}
 
   {% block headScripts %}
@@ -75,9 +73,7 @@
     System.import('js/main');
   </script> #}
 
-  <!--build:js /js/main.min.js -->
   <script src="/js/main.js"></script>
-  <!--endbuild -->
 
   <script type="text/javascript" src="https://gumroad.com/js/gumroad.js"></script>
 

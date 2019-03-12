@@ -1,44 +1,35 @@
-import gulp from 'gulp';
-import plugins from 'gulp-load-plugins';
-import spritesmith from 'gulp.spritesmith';
-import browserSync from 'browser-sync';
-import merge from 'merge-stream';
+const gulp = require('gulp')
+const autoprefixer = require('gulp-autoprefixer')
+const browserSync = require('browser-sync')
+const config = require('../config')
+const cssnano = require('gulp-cssnano')
+const gulpIf = require('gulp-if')
+const plumber = require('../custom_modules/plumber')
+const sass = require('gulp-sass')
+const sassLint = require('gulp-sass-lint')
+const size = require('gulp-size')
+const sourcemaps = require('gulp-sourcemaps')
 
-// Import configs
-import config from '../config';
-import plumber from '../custom_modules/plumber';
+const isDev = config.env === 'dev'
+const isProd = config.env === 'prod'
 
-let $ = plugins();
-
-// CSS Sprites 
-gulp.task('sprites', () => {
-  let spriteData = gulp.src(config.sprites.src)
-    .pipe(plumber())
-    .pipe($.spritesmith(config.sprites.opts))
-
-  // Runs images through imagemin for production 
-  let imgStream = spriteData.img
-    .pipe($.if(config.env === 'prod', $.imagemin(config.images.opts)))
-    .pipe(gulp.dest(config.images.dest));
- 
-  // Creates sprites CSS in the same location as Sass dest
-  let cssStream = spriteData.css
-    .pipe(gulp.dest(config.sprites.dest));
- 
-  // Return a merged stream to handle both `end` events 
-  return merge(imgStream, cssStream);
-})
+const src = config.src + '/scss/**/*.{scss,sass}'
+const dest = config.dest + '/css'
+const sassOpts = { includePaths: ['./node_modules', './bower_components'] }
+const autoprefixerOpts = { browsers: ['last 2 versions'] }
 
 gulp.task('sass', () => {
-  return gulp.src(config.sass.src)
+  return gulp.src(src)
     .pipe(plumber('Error Running Sass'))
-    .pipe($.sourcemaps.init())
-    .pipe($.sass(config.sass.opts))
-    .pipe($.autoprefixer(config.autoprefixer))
-    .pipe($.sourcemaps.write())
-    .pipe($.size({'title': 'styles'}))
-    .pipe(gulp.dest(config.sass.dest))
-    .pipe(browserSync.reload({
-      stream: true
-    }));
+    .pipe(sassLint())
+    .pipe(sassLint.format())
+    .pipe(sassLint.failOnError())
+    .pipe(gulpIf(isDev, sourcemaps.init()))
+    .pipe(sass(sassOpts))
+    .pipe(autoprefixer(autoprefixerOpts))
+    .pipe(gulpIf(isDev, sourcemaps.write()))
+    .pipe(gulpIf(isProd, cssnano()))
+    .pipe(size({'title': 'styles'}))
+    .pipe(gulp.dest(dest))
+    .pipe(gulpIf(isDev, browserSync.reload({stream: true})))
 })
