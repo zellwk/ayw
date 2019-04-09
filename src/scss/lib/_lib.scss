@@ -4,12 +4,12 @@
 // This file is for you to import other libraries that
 // you would like to include into your project.
 //
-// I chose to include all my project dependencies with Bower. 
+// I chose to include all my project dependencies with Bower.
 //
 // To install libraries with Bower, open the terminal and type
-// `bower install <package-name> --save` and it will be automatically 
+// `bower install <package-name> --save` and it will be automatically
 // installed in app/bower_components.
-// 
+//
 // If you want to use Bower, you must have node.js and bower installed
 // in your system.
 //
@@ -23,22 +23,17 @@
 
 // Susy and Susy Helpers
 // ---------------------
-@import 'susy/sass/susy';
-// @import 'susy-helpers/susy-helpers';
+@import "susy/sass/susy";
 
 // Breakpoints
 // ------------
-@import 'mappy-breakpoints/mappy-breakpoints';
+@import "mappy-breakpoints/mappy-breakpoints";
 
 // Typography
 // ----------
-@import 'vertical-rhythms-without-compass/vertical-rhythms';
-@import 'modular-scale/stylesheets/modular-scale';
+@import "vertical-rhythms-without-compass/vertical-rhythms";
+@import "modular-scale";
+
 // Forms
 // -----
-@import 'adaptive-placeholders/adaptive-placeholders';
-
-// Misc
-// ----
-@import 'sass-hidpi/hidpi'; // for responsive images
-@import 'themify/themify'; // for theming
+@import "adaptive-placeholders";

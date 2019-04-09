@@ -6,7 +6,6 @@ const cssnano = require('gulp-cssnano')
 const gulpIf = require('gulp-if')
 const plumber = require('../custom_modules/plumber')
 const sass = require('gulp-sass')
-const sassLint = require('gulp-sass-lint')
 const size = require('gulp-size')
 const sourcemaps = require('gulp-sourcemaps')
 
@@ -21,9 +20,6 @@ const autoprefixerOpts = { browsers: ['last 2 versions'] }
 gulp.task('sass', () => {
   return gulp.src(src)
     .pipe(plumber('Error Running Sass'))
-    .pipe(sassLint())
-    .pipe(sassLint.format())
-    .pipe(sassLint.failOnError())
     .pipe(gulpIf(isDev, sourcemaps.init()))
     .pipe(sass(sassOpts))
     .pipe(autoprefixer(autoprefixerOpts))
