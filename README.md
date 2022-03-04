@@ -1,33 +1,18 @@
-<<<<<<< HEAD
-# Installation 
+# Setup
 
-run these commands: 
+Run `npm install` to install dependencies
 
-1) `npm install`
-2) `jspm install` (Using JSPM for JavaScript stuff)
+```bash
+npm install
+```
 
-# Usage 
+## Usage
 
-run this command to watch for files and regenerate everything upon save: 
+### Developing in a local environment
 
-~~~
-gulp 
-~~~
+Open two terminal windows.
 
-Here are some files you might want to touch: 
+- Run `npm run server` in one of them
+- Run `npm run dev` in the other one
 
-1) `src/post/*` are for markdown posts that will be compiled into blogs. Eventual URL is based on permalink frontmatter. See files for more info
-2) `src/pages/*` are for HTML pages. Eventual URL based on file name. See files for more info 
-3) `scss/*` are for Sass stuff. 
-4) `js/*` are for JS stuff. 
-5) `src/_data.json` for global data
-6) `src/_site.js` (is not in use yet)
-7) `src/templates` are for Nunjuck tempaltes and other partials, fragments etc. 
-
-# Production 
-
-Not done yet :) 
-=======
-# automate-your-workflow
-Website for AYW
->>>>>>> dc3243a43a071477a585fffe877966569a48410a
+Navigate to the link shown after `npm run dev` completes.

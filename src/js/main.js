@@ -1,11 +1,15 @@
-import $ from 'jquery'
-import './local-scroll'
+// $toggle.on('click', function (event) {
+//   event.preventDefault()
+//   $cards.addClass('is-show')
+//   $toggle.addClass('is-disabled')
+// })
 
-let $cards = $('.Card')
-let $toggle = $('.jsToggleToc')
+const cards = document.querySelector('.Cards')
+const toggle = document.querySelector('.jsToggleToc')
 
-$toggle.on('click', function (event) {
+toggle.addEventListener('click', event => {
   event.preventDefault()
-  $cards.addClass('is-show')
-  $toggle.addClass('is-disabled')
+  console.log(cards)
+  cards.classList.add('is-show')
+  toggle.classList.add('is-disabled')
 })

@@ -43,7 +43,6 @@ body {
     flex-wrap: nowrap;
   }
 
-
   img {
     order: -1;
     border-radius: 100%;
@@ -91,7 +90,6 @@ body {
     padding: rhythm(0.75) rhythm(0.75);
   }
 
-
   p {
     max-width: 100%;
   }
@@ -117,7 +115,7 @@ body {
   display: none;
   margin-top: 1em;
 
-  .Card.is-show & {
+  .Cards.is-show & {
     display: block;
   }
 }
@@ -131,7 +129,6 @@ body {
     margin-left: -10px;
     margin-right: -10px;
   }
-
 
   @include bp(wide) {
     margin-left: rhythm(-3);
@@ -151,7 +148,6 @@ body {
     margin: 10px;
     font-size: 0.8rem;
   }
-
 
   .Package__title {
     height: rhythm(1);
@@ -176,7 +172,7 @@ body {
     margin: 0.25em 0;
 
     &:before {
-      content: counter(package) ". ";
+      content: counter(package) '. ';
     }
   }
 }
@@ -277,7 +273,7 @@ $adaptive-placeholder: (
   active-color: color(carnation),
   placeholder-background-color: white,
   textarea: false
-  );
+);
 
 // FORM
 .ck_form {

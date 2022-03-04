@@ -1,0 +1,39 @@
+---
+layout: _base/page
+permalink: index.html
+closed: true
+siteFooter: true
+---
+
+<article>
+  <section>
+    {% include "partials/intro/intro.nunjucks" %}
+    {% include "partials/intro/s2.nunjucks" %}
+    {% include "partials/intro/s3.nunjucks" %}
+    {% include "partials/intro/s4.nunjucks" %}
+    {% include "partials/intro/sample.nunjucks" %}
+  </section>
+  <section>
+    {% include "partials/author.nunjucks" %}
+  </section>
+  <section>
+    {% include "partials/toc.nunjucks" %}
+  </section>
+  <section>
+    <h2 id="packages">The packages</h2>
+    {% include "partials/packages.nunjucks" %}
+  </section>
+  <section>
+    {% include "partials/worth.nunjucks" %}
+  </section>
+  <section>
+    {% include "partials/testimonials.nunjucks" %}
+  </section>
+  <section>
+    {% include "partials/faq.nunjucks" %}
+  </section>
+  <section>
+    <h2 id="packages">Are you ready to automate your workflow?</h2>
+    {% include "partials/packages.nunjucks" %}
+  </section>
+</article>

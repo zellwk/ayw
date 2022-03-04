@@ -1,0 +1,23 @@
+<section id="cta" class="o-section">
+  <div class="grid grid--center">
+    <h2 class="h1 grid__header" style="max-width: 12em;">Start learning JavaScript</h2>
+    <div class="grid__centered-text o-text">
+      {% markdown %}
+      Learn JavaScript will help you master JavaScript. **You will understand JavaScript**, **build anything you want from scratch**, and **code without copy-pasting** from Google.
+      {# **Enrollment closes on Friday, 16 July, 11:59pm Pacific.**  #}
+
+      Late enrolments will not be excepted, no exceptions. Don't miss this chance to enroll if you want to learn JavaScript properly!
+      {% endmarkdown %}
+    </div>
+    <div class="ddio_countdown_wrap"></div>
+    <div class="timer" data-type="inline"></div>
+  </div>
+
+  <div class="grid grid-cta">
+    {% import 'macros/package.nunjucks' as package %}
+
+    {{package.package('starter')}}
+    {{package.package('mastery')}}
+    {{package.package('guided')}}
+  </div>
+</section>

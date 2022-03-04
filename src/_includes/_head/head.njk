@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+{%- set pageTitle %}
+  {%- if title -%}
+    {{title}} | {{site.title}}
+  {%- else -%}
+    {{site.title}}
+  {%- endif -%}
+{%- endset %}
+
+{# Set description #}
+{%- set pageDesc -%}
+  {%- if description -%}
+    {{description}}
+  {%- else -%}
+    {{site.description}}
+  {%- endif -%}
+{%- endset -%}
+
+<title>{{- pageTitle -}}</title>
+<meta name="description" content="{{- pageDesc -}}"/>
+{%- if blockRobots -%}
+  <meta name="robots" content="noindex, follow">
+{%- endif %}
+<link rel="canonical" href="{{- site.url -}} {{- page.url }}">
+
+{% include "_head/social.njk" %}
+{% include "_head/favicon.njk" %}
+{% include "_head/assets.njk" %}
+{#- #}

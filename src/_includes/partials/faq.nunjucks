@@ -1,0 +1,29 @@
+{% markdown %}
+## Have questions?
+{% endmarkdown %}
+
+<dl class="FAQ">
+  <dt>Will this workflow work for everyone?</dt>
+  <dd>Yes, the workflow we're building works on all operating systems. It doesn't matter if you use Windows, Mac or Linux. It'll work on everything.</dd>
+
+  <dt>I'm afraid of spending too much time on creating my workflow</dt>
+  <dd>Building an automated workflow is one of the best investments you'll ever make for your development career because it will drastically shorten the time you spend on coding. <br><br> I suggest you give yourself a time limit, work through the book and use the workflow we spelled out in there. Once you have a decent workflow, consider crafting your personalized one with the extra free time. It'll be worth it.</dd>
+
+  <dt>What makes this different from the other Gulp books?</dt>
+  <dd>This book is different because it doesn't focus only on Gulp. It aims to equip you with the knowledge to use any tool, even if something better than Gulp pops up. Plus, we're going to be making a real workflow. Which book does that?</dd>
+
+  <dt>What if I already know Gulp?</dt>
+  <dd>You're going to love the book if you're unsure whether you're doing things correctly, or if you feel that you can improve parts of your workflow. If not, free feel to skip this book.</dd>
+
+  <dt>What version of Gulp are we using?</dt>
+  <dd>We're using Gulp 3.9 in this book. (This book is written in 2016). I don't intend to upgrade the book.</dd>
+
+  <dt>Do you do refunds?</dt>
+  <dd>Yes, I only want your money if you're happy with the book. If you don't like it for any reason, just send me an email with your receipt within 30 days and I'll refund you.</dd>
+
+  <dt>Where do I learn more about you?</dt>
+  <dd>Feel free to look around <a href='http://zellwk.com'>my blog</a> to find out more about how I write and teach.</dd>
+
+  <dt>What if I have more questions?</dt>
+  <dd>Just send me an email at <a href='mailto:zellwk@gmail.com'>zellwk@gmail.com</a> and I'll be back shortly with a reply. Ask anything you want!</dd>
+</dl>

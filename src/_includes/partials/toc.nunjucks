@@ -1,0 +1,165 @@
+{% markdown %}
+## What's in the book?
+
+There's a total of 8 sections, with 42 chapters worth of content.
+
+(Note: Hey! AYW was written 2 years ago. Since then, technology has evolved, so you'll run into some errors in the testing phase. Don't worry about the errors in the testing phase. They're not going to stop you from creating the workflow you want. You'll still learn the thought process and workflow you need to think about testing, which is the valueable part. Once you understand Gulp, you'll be able to create your own testing phase with different tools out there as well).
+
+<a href="#" class="btn--ghost jsToggleToc">Show all chapters</a>
+{% endmarkdown %}
+
+<div class="Cards">
+  <div class="Card">
+    <div class="Card__title">Introduction to Automation</div>
+    <div class="Card__desc">
+      <p>Here, we walk through the basics of automation and show you things you need to know before you begin the journey. This will be where you get knowledge of things like the command line, what goes in a development workflow, and how to use Gulp.</p>
+    </div>
+    <div class="Card__chapters">
+      <strong>Chapters</strong>
+      <ol>
+        <li>Why don’t people automate</li>
+        <li>Your First Obstacle To Automation</li>
+        <li>Overview of a Web Development Workflow </li>
+        <li>Choosing Your Build Tool</li>
+        <li>Getting Started with Gulp</li>
+        <li>Structuring Your Project</li>
+        <li>Writing A Real Gulp Task</li>
+      </ol>
+      {% for chapter in section.chapters %}
+        <div>{{chapter}}</div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="Card">
+    <div class="Card__title">The Development Phase</div>
+    <div class="Card__desc">
+      <p>We begin building the automated workflow at this phase, starting with the process of removing tedious and manual tasks you do. You will also learn how to use tools many modern tools for development.</p>
+    </div>
+    <div class="Card__chapters">
+      <strong>Chapters</strong>
+      <ol>
+        <li>The Development Phase</li>
+        <li>Watching with Gulp</li>
+        <li>Live-reloading with Browser Sync</li>
+        <li>Automatic Vendor Prefixes with Autoprefixer</li>
+        <li>Easier Debugging with Sourcemaps</li>
+        <li>Using CSS Sprites</li>
+        <li>JavaScript in the Development Phase</li>
+        <li>A JavaScript Workflow with Bower</li>
+        <li>Integrating Bower with Sass</li>
+        <li>Modularizing HTML with Template Engines</li>
+        <li>Tying up Development Task</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="Card">
+    <div class="Card__title">The Testing Phase</div>
+    <div class="Card__desc">
+      <p>You will learn what to test for, and how to test your code with you having to eyeball them manually.</p>
+    </div>
+    <div class="Card__chapters">
+      <strong>Chapters</strong>
+      <ol>
+        <li>The Testing Phase</li>
+        <li>Linting JavaScript with JSHint and JSCS</li>
+        <li>Linting Sass with SCSSLint</li>
+        <li>JavaScript Unit Testing with Karma and Jasmine</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="Card">
+    <div class="Card__title">The Integration Phase</div>
+    <div class="Card__desc">
+      <p>You'll learn how to get a machine to test your code whenever you push it to a remote repository. Here, you'll ensure that you don't have to worry about your website breaking without knowing it.</p>
+    </div>
+    <div class="Card__chapters">
+      <strong>Chapters</strong>
+      <ol>
+        <li>The Integration Phase</li>
+        <li>Committing and Pushing with Git</li>
+        <li>Continuous Integration with Travis</li>
+        <li>Testing Workflow with Travis</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="Card">
+    <div class="Card__title">The Optimization Phase</div>
+    <div class="Card__desc">
+      <p>This is where you prepare your website for production. We reduce your asset sizes and do everything we can to make sure your website is wicked fast. What's more, everything will be done in one simple step so you don't forget anything.</p>
+    </div>
+    <div class="Card__chapters">
+      <strong>Chapters</strong>
+      <ol>
+        <li>The Optimization Phase</li>
+        <li>Optimizing JavaScript</li>
+        <li>Optimizing CSS</li>
+        <li>Optimizing Images</li>
+        <li>Speeding up the optimization process </li>
+        <li>Cache Busting</li>
+        <li>Tying up the Optimization Phase</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="Card">
+    <div class="Card__title">The Deployment Phase</div>
+    <div class="Card__desc">
+      <p>The deployment phase shows you different ways to deploy your website quickly onto your servers without having copy and paste your files by FTPing in manually. Updating your site becomes less of a headache.</p>
+    </div>
+    <div class="Card__chapters">
+      <strong>Chapters</strong>
+      <ol>
+        <li>The Deployment Phase</li>
+        <li>Deploying with Version Control</li>
+        <li>Deploying with Gulp</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="Card">
+    <div class="Card__title">The Scaffolding Phase</div>
+    <div class="Card__desc">
+      <p>Here, you'll learn how to use the workflow with other projects. You'll also learn how to update project dependencies easily.</p>
+    </div>
+    <div class="Card__chapters">
+      <strong>Chapters</strong>
+      <ol>
+        <li>The Scaffolding Phase</li>
+        <li>Updating npm Dependencies </li>
+        <li>Updating Bower Dependencies</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="Card">
+    <div class="Card__title">Tying Everything Together</div>
+    <div class="Card__desc">
+      <p>In the last section of the book, we go through how to organize your Gulpfile, how to find good plugins to use and what to do next after you've completed the book.</p>
+    </div>
+    <div class="Card__chapters">
+      <strong>Chapters</strong>
+      <ol>
+        <li>Tying Everything Together</li>
+        <li>Cleaning Up The Gulpfile</li>
+        <li>What’s Next</li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+{% markdown %}
+
+## Bonus materials (for the Complete Package)
+{# **Bonus #1: Building a workflow for Wordpress**<br>
+You may run into situations where you can't use the workflow we've created directly in your project. One of such situations is when you use a CMS. <br><br> You'll learn how to overcome these situations in this bonus by learning to tweak the workflow to work with Wordpress. #}
+
+**Bonus #1: Creating your own Gulp plugin**<br>
+You never have to wait for someone else to create a plugin you desperately need once you learn how to do so. For example, I created my own plugins to create PDF, ePub and Mobi versions of this book because nothing else out there seemed to work. <br><br>Learning to create plugins is key to unlock your ability to create any kind of workflow you want. You'll learn how a Gulp plugin works, and how to craft one in this bonus.
+
+**Bonus #2: Access to my personal static-site generator**<br>
+You'll also get access to my personal static-site generator that I built with Gulp. This static-site generator is used to run my main website, zellwk.com, and other sites that I create. I'm always updating it, so you can be assured that you're using the latest and bestest technologies that I know of.
+{% endmarkdown %}

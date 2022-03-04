@@ -1,0 +1,85 @@
+{% import 'macros/package.nunjucks' as package %}
+
+<section id="packages" class="o-section o-section--has-background">
+  <div class="grid grid--center grid-packages">
+    <h2 id="enroll" class="h1 grid__header" style="max-width: 12em;">Enroll in Learn JavaScript</h2>
+    <p class="grid__centered-text type-subtitle u-center">Choose one of these three packages.</p>
+
+    <div class="grid-package c-enroll-package" data-theme="guided-instruction">
+      <header class="package__header">
+        <h3 class="package__title">Guided</h3>
+      </header>
+
+      <div class="package__body o-text">
+        {%- markdown %}
+        Guided gives you all the support you need to become great at JavaScript.
+
+        **You'll get direct feedback from me** through 1-1 video calls. You'll also get all 22 modules of Learn JavaScript, and a private community of learners to keep you motivated.
+
+        **What you get with Guided Instruction:**
+
+        -  Two 60-minute video calls with Zell
+        -  22 modules of Learn JavaScript (300+ lessons)
+        -  Learn to build 20 real components
+        -  Lifetime access to Learn JavaScript Community
+        {%- endmarkdown %}
+      </div>
+
+      <div class="package__sidebar">
+        {% include 'svg/guided-instruction.svg' %}
+        {{package.button('guided', '', closed)}}
+      </div>
+    </div>
+
+    <div class="grid-package c-enroll-package" data-theme="complete-preorder">
+
+      <header class="package__header">
+        <h3 class="package__title">Mastery</h3>
+      </header>
+
+      <div class="package__body o-text">
+        {%- markdown %}
+        Mastery gives you all 22 modules of Learn JavaScript. Each lesson builds on top of the previous lesson to **help you become a great frontend developer**.
+
+        By the end of the course, you’ll be able to **build anything you want from scratch, without Googling**.
+
+        **What you’ll get with Mastery Pack:**
+
+        - 22 modules of Learn JavaScript (300+ lessons).
+        - Learn to build 20 real components.
+        - Lifetime access to Learn JavaScript Community
+        {%- endmarkdown %}
+      </div>
+
+      <div class="package__sidebar">
+        {% include 'svg/complete.svg' %}
+        {{package.button('mastery', '', closed)}}
+      </div>
+    </div>
+
+    <div class="grid-package c-enroll-package o-text" data-theme="starter-pack">
+      <header class="package__header">
+        <h3 class="package__title">Starter</h3>
+      </header>
+
+      <div class="package__body">
+        {%- markdown %}
+        Starter is perfect for you if you want to learn JavaScript, but you're not ready to dive all-in. **You'll build a strong JavaScript foundation** that lets you *learn concepts* on your own *with less effort*.
+
+        Besides the theory lessons, you also get to make five interactive components. You will **begin to think like a developer**.
+
+        **Here’s what you get with Starter Pack:**
+
+        - 7 modules of Learn Javascript (69 lessons).
+        - Learn to build 5 real components.
+        - Lifetime access to Learn JavaScript Community
+        {%- endmarkdown %}
+      </div>
+
+      <div class="package__sidebar">
+        {% include 'svg/starter.svg' %}
+        {{package.button('starter', '', closed)}}
+      </div>
+    </div>
+  </div>
+</section>

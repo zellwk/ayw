@@ -1,12 +1,21 @@
-*.gem
-.sass-cache
-.bundle
-dev
-dist
-*.log
-.publish
-*.lock
-node_modules
-bower_components
+# osx noise
+.DS_Store
+profile
 
-stylesheets/modular-scale.zip
+#ignore packages
+node_modules
+
+#ignore logs
+*.log
+
+#ignore generated files
+dist
+rev.json
+_tmp
+
+# Ignore env variables and secret keys
+secrets/*
+
+# For Ulysses
+*.plist
+

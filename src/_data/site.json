@@ -1,0 +1,15 @@
+{
+  "title": "Automating Your Workflow",
+  "url": "http://automateyourworkflow.com",
+  "description": "Create an automated development and deployment workflow with Gulp.",
+  "author": {
+    "name": "Zell Liew",
+    "twitter": "@zellwk",
+    "email": "zellwk@gmail.com",
+    "gplus": "https://plus.google.com/u/0/107981139229061135975"
+  },
+  "social": {
+    "facebook": "https://learnjavascript.today/images/og-fb2.jpg",
+    "twitter": "https://learnjavascript.today/images/og-twitter2.jpg"
+  }
+}

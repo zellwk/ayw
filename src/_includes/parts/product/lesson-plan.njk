@@ -1,0 +1,576 @@
+{# {% import 'macros/testimonial.nunjucks' as testimonial %} #}
+
+<section class="o-section">
+  <div class="grid">
+    <div class="grid-toc o-text">
+      <div class="grid-toc__full">
+        <h3 id="lesson-plan">The lesson plan</h3>
+        <p>Here&rsquo;s a quick table of contents for your viewing pleasure:</p>
+      </div>
+
+      <h4 class="toc__module">
+        <span class="toc__module-number"></span>
+        <div class="toc__module-title">—JavaScript and its Ecosystem</div>
+      </h4>
+
+      <ol class="toc__lessons">
+        <li>How to use this course</li>
+        <li>What is JavaScript used for?</li>
+        <li>The JavaScript ecosystem</li>
+        <li>Varying versions of JavaScript</li>
+      </ol>
+
+      <h4 class="toc__module">
+        <span class="toc__module-number"></span>
+        <div class="toc__module-title">—JavaScript Basics</div>
+      </h4>
+
+      <ol class="toc__lessons">
+        <li>Linking your JavaScript file</li>
+        <li>Preparing your text editor</li>
+        <li>The console</li>
+        <li>Comments</li>
+        <li>You don't need semicolons</li>
+        <li>Strings, numbers, and booleans</li>
+        <li>Declaring variables</li>
+        <li>Functions</li>
+        <li>Arrow functions</li>
+        <li>Intro to objects</li>
+        <li>If/else statements</li>
+        <li>The NOT operator</li>
+        <li>Null and undefined</li>
+        <li>The BOM and the DOM</li>
+        <li>Selecting an element</li>
+        <li>Changing classes</li>
+        <li>Listening to events</li>
+        <li>Callbacks</li>
+      </ol>
+
+      <h4 class="toc__module">
+        <span class="toc__module-number"></span>
+        <div class="toc__module-title">—Building simple components</div>
+      </h4>
+
+      <ol class="toc__lessons">
+        <li>How to think like a developer</li>
+        <li>How to use the starter template</li>
+        <li>Do this for every component</li>
+        <li>
+          🛠️ Building an off-canvas menu </li>
+        <li>
+          🛠️ building a modal window</li>
+        <li>Lessons from the building process</li>
+        <li>Debugging errors</li>
+        <li>How to use a linter</li>
+      </ol>
+
+      <h4 class="toc__module">
+        <span class="toc__module-number"></span>
+        <div class="toc__module-title">—Arrays and loops</div>
+      </h4>
+
+      <ol class="toc__lessons">
+        <li>Introduction to arrays</li>
+        <li>Array methods</li>
+        <li>For loops</li>
+        <li>The forEach loop</li>
+        <li>Selecting multiple elements</li>
+        <li>Node vs Elements</li>
+        <li>
+          🛠️ Building an accordion</li>
+      </ol>
+
+      <h4 class="toc__module">
+        <span class="toc__module-number"></span>
+        <div class="toc__module-title">—DOM basics</div>
+      </h4>
+
+      <ol class="toc__lessons">
+        <li>Id, classes, tags, and attributes</li>
+        <li>Changing CSS with JavaScript</li>
+        <li>Getting CSS with JavaScript</li>
+        <li>Changing attributes</li>
+        <li>Finding an element's size and position</li>
+        <li>DOM Traversals</li>
+        <li>
+          🛠️ Building a Tabbed Component</li>
+        <li>
+          🛠️ Carousel: HTML and CSS</li>
+        <li>
+          🛠️ Carousel: Switching slides with JavaScript</li>
+        <li>
+          🛠️ Carousel: Working the dots</li>
+        <li>
+          🛠️ Carousel: Positioning slides with JavaScript</li>
+      </ol>
+
+      <h4 class="toc__module">
+        <span class="toc__module-number"></span>
+        <div class="toc__module-title">—Events deep dive</div>
+      </h4>
+
+      <ol class="toc__lessons">
+        <li>The listening element</li>
+        <li>Default behaviors</li>
+        <li>Event propagation</li>
+        <li>Event delegation</li>
+        <li>Removing event listeners</li>
+        <li>
+          🛠️ Modal: Closing the modal</li>
+        <li>
+          🛠️ Accordion: Event delegation</li>
+        <li>
+          🛠️ Tabby: Event delegation</li>
+        <li>
+          🛠️ Carousel: Event delegation</li>
+      </ol>
+
+      <h4 class="toc__module">
+        <span class="toc__module-number"></span>
+        <div class="toc__module-title">—Transitions and Animations</div>
+      </h4>
+
+      <ol class="toc__lessons">
+        <li>CSS transitions</li>
+        <li>CSS animations</li>
+        <li>Silky-smooth animations</li>
+        <li>Integrating CSS transitions and animations with Javascript</li>
+        <li>JavaScript animations</li>
+        <li>The Greensock Animation API (GSAP)</li>
+        <li>
+          🛠️ Modal: Animating the modal</li>
+        <li>
+          🛠️ Modal: Animating the pointing hand</li>
+        <li>
+          🛠️ Modal: Animating the waving hand</li>
+        <li>
+          🛠️ Modal: Modal: Wave hand animation with JavaScript (using GSAP)</li>
+        <li>
+          🛠️ Modal: Wave hand animation with JavaScript (using GSAP)</li>
+        <li>
+          🛠️ Accordion: Animations</li>
+        <li>
+          🛠️ Carousel: Animations</li>
+      </ol>
+
+      <div class="toc__testimonial">
+        {% testimonial 'sirapop-lam-o-pas' %}
+      </div>
+
+      <h4 class="toc__module">
+        <span class="toc__module-number"></span>
+        <div class="toc__module-title">—Useful JavaScript features</div>
+      </h4>
+
+      <ol class="toc__lessons">
+        <li>Ternary operators</li>
+        <li>And and OR operators</li>
+        <li>Early returns</li>
+        <li>Template literals</li>
+        <li>Destructuring</li>
+        <li>Default parameters</li>
+        <li>Enhanced object literals</li>
+        <li>Rest and spread operators</li>
+        <li>Useful array methods</li>
+        <li>Reduce</li>
+        <li>Looping through objects</li>
+        <li>Returning objects with implicit return</li>
+        <li>
+          🛠️ Accordion: Using useful JavaScript features
+        </li>
+        <li>
+          🛠️ Tabby: Using useful JavaScript features</li>
+        <li>
+          🛠️ Carousel: Useful JavaScript features</li>
+      </ol>
+
+      <h4 class="toc__module">
+        <span class="toc__module-number"></span>
+        <div class="toc__module-title">—JavaScript best practices</div>
+      </h4>
+
+      <ol class="toc__lessons">
+        <li>Write declarative code</li>
+        <li>Functions with a purpose</li>
+        <li>Manage scope</li>
+        <li>Reduce state changes</li>
+        <li>Don't reassign</li>
+        <li>Don't mutate</li>
+        <li>Preventing Objects from mutating</li>
+        <li>Preventing Arrays from mutating</li>
+        <li>Write pure functions</li>
+        <li> 🛠️ Accordion: Refactor</li>
+        <li> 🛠️ Carousel: First refactor</li>
+        <li> 🛠️ Carousel: Refactoring the dots part</li>
+        <li> 🛠️ Carousel: Previous and next buttons</li>
+        <li> 🛠️ Carousel: Second refactor</li>
+      </ol>
+
+      <h4 class="toc__module">
+        <span class="toc__module-number"></span>
+        <div class="toc__module-title">—Text and Content</div>
+      </h4>
+
+      <ol class="toc__lessons">
+        <li>Changing text and HTML</li>
+        <li>Creating HTML elements</li>
+        <li>Adding multiple elements to the DOM</li>
+        <li>Removing elements from the DOM</li>
+        <li> 🛠️ Carousel: Creating dots with JavaScript</li>
+        <li> 🛠️ Calculator: HTML and CSS </li>
+        <li> 🛠️ Calculator: Happy Path </li>
+        <li>🛠️ Calculator: Testing the Happy Path Path </li>
+        <li>🛠️ Calculator: Easy Edge Cases </li>
+        <li> 🛠️ Calculator: Difficult Edge Cases Cases </li>
+        <li> 🛠️ Calculator: Refactoring </li>
+        <li> The Switch Statement </li>
+        <li> 🛠️ Calculator: Refactoring part 2 </li>
+        <li> 🛠️ Popover: Making one popover</li>
+        <li> 🛠️ Popover: Making four popovers</li>
+        <li> 🛠️ Popover: Making popovers with JavaScript</li>
+      </ol>
+
+      <div class="toc__testimonial">
+        {%- testimonial 'maxim-konoval' %}
+      </div>
+
+      <h4 class="toc__module">
+        <span class="toc__module-number"></span>
+        <div class="toc__module-title">—Forms</div>
+      </h4>
+
+      <ol class="toc__lessons">
+        <li>Intro to forms</li>
+        <li>Selecting form fields with JavaScript</li>
+        <li>Form fields and their events</li>
+        <li>Sanitize your output</li>
+        <li>Generating unique IDs</li>
+        <li> 🛠️ Popover: Dynamic ID </li>
+        <li> 🛠️ Todolist: The HTML and CSS </li>
+        <li> 🛠️ Todolist: Creating tasks with JavaScript </li>
+        <li> 🛠️ Todolist: Deleting tasks with JavaScript </li>
+        <li> 🛠️ Typeahead: The HTML and CSS </li>
+        <li> 🛠️ Typeahead: Displaying predictions </li>
+        <li> 🛠️ Typeahead: Selecting a prediction </li>
+        <li> 🛠️ Typeahead: Bolding search terms </li>
+      </ol>
+
+      <h4 class="toc__module">
+        <span class="toc__module-number"></span>
+        <div class="toc__module-title">—Dates</div>
+      </h4>
+
+      <ol class="toc__lessons">
+        <li>The Date Object</li>
+        <li>Getting a formatted date</li>
+        <li>Getting the time</li>
+        <li>Local time and UTC Time</li>
+        <li>Setting a specific date</li>
+        <li>Setting a date with Date methods</li>
+        <li>Adding (or subtracting) date and time</li>
+        <li>Comparing Dates and times</li>
+        <li> 🛠️ Datepicker: Initial HTML and CSS </li>
+        <li> 🛠️ Datepicker: Building the calendar </li>
+        <li> 🛠️ Datepicker: Building the datepicker with JavaScript </li>
+        <li> 🛠️ Datepicker: Previous and next buttons </li>
+        <li> 🛠️ Datepicker: Selecting a date </li>
+        <li> 🛠️ Datepicker: Positioning the datepicker </li>
+        <li> 🛠️ Datepicker: Showing and hiding </li>
+        <li>Formatting a date with toLocaleString</li>
+        <li>setTimeout</li>
+        <li>setInterval</li>
+        <li> 🛠️ Countdown: The HTML and CSS </li>
+        <li> 🛠️ Countdown: The JavaScript </li>
+        <li> 🛠️ Countdown: Counting months </li>
+        <li> 🛠️ Countdown: Daylight Saving Time </li>
+        <li> 🛠️ Countdown: Counting years </li>
+      </ol>
+
+      <h4 class="toc__module">
+        <span class="toc__module-number"></span>
+        <div class="toc__module-title">—Asynchronous JavaScript</div>
+      </h4>
+
+      <ol class="toc__lessons">
+        <li>Introduction to Ajax</li>
+        <li>Understanding JSON</li>
+        <li>The Fetch API</li>
+        <li>Possible data types</li>
+        <li>JavaScript Promises</li>
+        <li>Requests and responses</li>
+        <li>Sending a POST request</li>
+        <li>Authentication</li>
+        <li>Handling errors</li>
+        <li>Viewing response headers</li>
+        <li>CORS and JSONP</li>
+        <li>XHR vs Fetch</li>
+        <li>Using an Ajax library</li>
+        <li>Reading API documentation</li>
+        <li>Understanding curl</li>
+        <li>🛠️ Todolist: The Todolist API</li>
+        <li>🛠️ Todolist: Fetching tasks</li>
+        <li>🛠️ Todolist: Creating tasks</li>
+        <li>🛠️ Todolist: Editing tasks</li>
+        <li>🛠️ Todolist: Deleting tasks</li>
+        <li>🛠️ Todolist: Creating tasks with Optimistic UI</li>
+        <li>🛠️ Todolist: Handling Optimistic UI errors</li>
+        <li>🛠️ Todolist: Editing tasks with Optimistic UI</li>
+        <li>🛠️ Todolist: Deleting tasks with Optimistic UI</li>
+        <li>🛠️ Todolist: Refactor</li>
+        <li>🛠️ Typeahead: How to add Ajax</li>
+        <li>🛠️ Typeahead: Adding Ajax</li>
+        <li>🛠️ Typeahead: Handling errors</li>
+        <li>🛠️ Google Maps Clone: Creating your first Google Map</li>
+        <li>🛠️ Google Maps Clone: Fetching JSONP via JavaScript</li>
+        <li>🛠️ Google Maps Clone: Drawing directions</li>
+        <li>🛠️ Google Maps Clone: Driving directions</li>
+        <li>🛠️ Google Maps Clone: Handling errors</li>
+        <li>🛠️ Google Maps Clone: Adding stopovers</li>
+        <li>🛠️ Google Maps Clone: Refactor</li>
+      </ol>
+
+      <div class="toc__testimonial">
+        {% testimonial 'lauralee-flores' %}
+      </div>
+
+      <h4 class="toc__module">
+        <span class="toc__module-number"></span>
+        <div class="toc__module-title">—Advanced Asynchronous JavaScript</div>
+      </h4>
+
+      <ol class="toc__lessons">
+        <li> Requesting many resources at once New </li>
+        <li> Asynchronous functions New </li>
+        <li> Handling multiple awaits New </li>
+        <li> Asynchronous loops New </li>
+        <li> 🛠️ Dota Heroes: Listing heroes </li>
+        <li> 🛠️ Dota Heroes: Filtering heroes (Part 1) </li>
+        <li> 🛠️ Dota Heroes: Filtering heroes (Part 2) </li>
+        <li> 🛠️ Dota Heroes: Refactoring </li>
+        <li> 🛠️ Dota Heroes: Hero Page New </li>
+        <li> 🛠️ Dota Heroes: Making the hero page robust New </li>
+        <li> 🛠️ Dota Heroes: Heroes page refactor </li>
+      </ol>
+
+      <h4 class="toc__module">
+        <span class="toc__module-number"></span>
+        <div class="toc__module-title">Keyboard</div>
+      </h4>
+
+      <ol class="toc__lessons">
+        <li> Keyboard users </li>
+        <li> Handling commonly used keys </li>
+        <li> Keyboard events </li>
+        <li> Understanding Tabindex </li>
+        <li> Detecting the focused element </li>
+        <li> Directing focus </li>
+        <li> Preventing people from tabbing into elements </li>
+        <li> How to choose keyboard shortcuts </li>
+        <li> Creating single-key shortcuts </li>
+        <li> 🛠️ Off-canvas: Adding keyboard interaction </li>
+        <li> 🛠️ Modal: Adding keyboard interaction </li>
+        <li> 🛠️ Accordion: Adding keyboard interaction </li>
+        <li> 🛠️ Tabby: Adding keyboard interaction </li>
+        <li> 🛠️ Tabby: Refactoring </li>
+        <li> 🛠️ Carousel: Adding keyboard interaction </li>
+        <li> 🛠️ Carousel: Displaying help text </li>
+        <li> 🛠️ Calculator: Adding keyboard interaction </li>
+        <li> 🛠️ Popover: Keyboard </li>
+        <li> 🛠️ Popover: Refactor </li>
+        <li>Keyboard shortcuts with Command and Control modifiers</li>
+        <li> 🛠️ Todolist: Keyboard </li>
+        <li> 🛠️ Typeahead: Keyboard </li>
+        <li> 🛠️ Typeahead: Selecting a prediction with the keyboard </li>
+        <li> 🛠️ Google Maps Clone: Keyboard </li>
+        <li> 🛠️ Dota Heroes: Keyboard </li>
+        <li> 🛠️ Datepicker: Tabbing in and out </li>
+        <li> 🛠️ Datepicker: Keyboard shortcuts </li>
+      </ol>
+
+      <div class="toc__testimonial">
+        {%- testimonial 'israel-obiagba' %}
+      </div>
+
+      <h4 class="toc__module">
+        <span class="toc__module-number"></span>
+        <div class="toc__module-title">—Accessibility</div>
+      </h4>
+
+      <ol class="toc__lessons">
+        <li> What is accessibility? </li>
+        <li> How to use a screen reader </li>
+        <li> Using NVDA </li>
+        <li> Using Voiceover </li>
+        <li> Aria roles </li>
+        <li> Landmark roles </li>
+        <li> Document structure roles </li>
+        <li> Live region roles </li>
+        <li> Widget roles </li>
+        <li> Window and Abstract roles </li>
+        <li> Accessible names and descriptions </li>
+        <li> Hiding content </li>
+        <li> ARIA properties and ARIA states </li>
+        <li> ARIA for expandable widgets </li>
+        <li> 🛠️ Off-canvas: Accessibility </li>
+        <li> ARIA for modal dialogs </li>
+        <li> 🛠️ Modal: Screen reader accessibility </li>
+        <li> 🛠️ Accordion: Screen reader accessibility </li>
+        <li> ARIA for Tabbed components </li>
+        <li> 🛠️ Tabby: Screen reader accessibility </li>
+        <li> 🛠️ Tabby: Refactor </li>
+        <li> 🛠️ Carousel: Screen reader accessibility </li>
+        <li> Roles that trigger Forms and Application modes </li>
+        <li> What's next for accessibility </li>
+      </ol>
+
+      <h4 class="toc__module">
+        <span class="toc__module-number"></span>
+        <div class="toc__module-title">—Handling Scroll</div>
+      </h4>
+
+      <ol class="toc__lessons">
+        <li> The Scroll event </li>
+        <li> 🛠️ Auto-hiding Sticky-nav: HTML and CSS </li>
+        <li> 🛠️ Auto-hiding Sticky-nav: JavaScript </li>
+        <li> 🛠️ Auto-hiding Sticky-nav: Natural reveal </li>
+        <li> Intersection Observer API </li>
+        <li> Intersection Observer Options </li>
+        <li> 🛠️ Slide & Reveal </li>
+        <li> 🛠️ Slide & Reveal: Always fade-in when you scroll down </li>
+        <li> 🛠️ Slide & Reveal: Fine-tuning the animation </li>
+        <li> 🛠️ Infinite Scroll: Anatomy </li>
+        <li> 🛠️ Infinite Scroll: Infinite load </li>
+        <li> 🛠️ Infinite Scroll: Refactor </li>
+        <li> 🛠️ Infinite Scroll: Implementing the Infinite Scroll </li>
+      </ol>
+
+      <h4 class="toc__module">
+        <span class="toc__module-number"></span>
+        <div class="toc__module-title">Mouse, Touch, and Pointers</div>
+      </h4>
+
+      <ol class="toc__lessons">
+        <li> Mouse Events </li>
+        <li> 🛠️ Spinning Pacman: HTML and CSS </li>
+        <li> 🛠️ Spinning Pacman: JavaScript </li>
+        <li> Touch events </li>
+        <li> Pointer events </li>
+        <li> Touch-action </li>
+        <li> 🛠️ Spinning Pacman: Supporting Touch </li>
+        <li> Cloning elements </li>
+        <li> 🛠️ DragDrop: HTML and CSS </li>
+        <li> 🛠️ DragDrop: JavaScript </li>
+        <li> 🛠️ DragDrop: Creating a drop preview </li>
+        <li> 🛠️ DragDrop: Sortable drop preview </li>
+        <li> 🛠️ DragDrop: Robustness </li>
+        <li> 🛠️ DragDrop: Refactor </li>
+      </ol>
+
+      <div class="toc__testimonial">
+        {% testimonial 'tom-mulkins' %}
+      </div>
+
+      <h4 class="toc__module">
+        <span class="toc__module-number"></span>
+        <div class="toc__module-title">—Object-oriented programming</div>
+      </h4>
+
+      <ol class="toc__lessons">
+        <li> Before we begin </li>
+        <li> What is Object Oriented Programming? </li>
+        <li> Four Flavours of Object Oriented Programming </li>
+        <li> Inheritance </li>
+        <li> This in JavaScript </li>
+        <li> Call, bind, apply </li>
+        <li> Creating Derivative Objects </li>
+        <li> Composition vs Inheritance </li>
+        <li> Polymorphism </li>
+        <li> Encapsulation </li>
+        <li> Closures </li>
+        <li> Encapsulation in Object Oriented Programming </li>
+        <li> Getters and Setters </li>
+        <li> What OOP flavour to use </li>
+        <li> When to use Object Oriented Programming </li>
+      </ol>
+
+      <h4 class="toc__module">
+        <span class="toc__module-number"></span>
+        <div class="toc__module-title">—Writing reusable code</div>
+      </h4>
+
+      <ol class="toc__lessons">
+        <li> Creating reusable code by writing libraries </li>
+        <li> Two Types of libraries Updated </li>
+        <li> Including libraries with Script tags </li>
+        <li> Including libraries with ES6 Modules </li>
+        <li> Dynamic imports </li>
+        <li> 🛠️ Off Canvas: Building a Library Updated </li>
+        <li> 🛠️ Modal: Library setup </li>
+        <li> 🛠️ Modal: Opening the Modal </li>
+        <li> 🛠️ Modal: Closing the modal </li>
+        <li> 🛠️ Modal: Inheritance and Polymorphism </li>
+        <li> 🛠️ Modal: Resolving differences between subclasses </li>
+        <li> 🛠️ Modal: Exposing properties and methods </li>
+        <li> 🛠️ Accordion: Building a library </li>
+        <li> 🛠️ Tabby: Building a library </li>
+        <li> 🛠️ Carousel: Building a library </li>
+        <li> 🛠️ Calculator: Library </li>
+        <li> 🛠️ Calculator: Fixing the Clear Key </li>
+        <li> 🛠️ Calculator: Handling other keys </li>
+        <li> 🛠️ Calculator: State </li>
+        <li> 🛠️ Popover: Library </li>
+        <li> 🛠️ Popover: Adding event listeners </li>
+        <li> 🛠️ Typeahead: Library </li>
+        <li> 🛠️ DatePicker: Library </li>
+      </ol>
+
+      <h4 class="toc__module">
+        <span class="toc__module-number"></span>
+        <div class="toc__module-title">—Vanilla JS to Frameworks</div>
+      </h4>
+
+      <ol class="toc__lessons">
+        <li>🛠️ Building a Tiny framework</li>
+        <li>🛠️ Tiny: Add event listeners</li>
+        <li>🛠️ Tiny: Updating state</li>
+        <li>🛠️ Tiny: Rendering Child Components</li>
+        <li>🛠️ Tiny: Changing Parent State</li>
+        <li>🛠️ Tiny: Passing Props</li>
+        <li>🛠️ Tiny: Multiple Props</li>
+        <li>🛠️ Tiny: Passing values from sibling components</li>
+        <li>🛠️ Tiny: Mounting</li>
+        <li>🛠️ Tiny: Passing props to descendants</li>
+        <li>🛠️ Tiny: A tiny refactor</li>
+      </ol>
+
+      <h4 class="toc__module">
+        <span class="toc__module-number"></span>
+        <div class="toc__module-title">—Single page applications</div>
+      </h4>
+
+      <ol class="toc__lessons">
+        <li>What is a Single Page App?</li>
+        <li>Simple SPA using only CSS</li>
+        <li>The Location Interface</li>
+        <li>The History Interface</li>
+        <li>Minimum viable server for a SPA</li>
+        <li>🛠️ Dota SPA: Introduction</li>
+        <li>🛠️ Dota SPA: Building The Heroes List</li>
+        <li>🛠️ Dota SPA: Building the filters</li>
+        <li>🛠️ Dota SPA: Filtering heroes</li>
+        <li>🛠️ Dota SPA: Displaying filtered heroes</li>
+        <li>🛠️ Dota SPA: Getting Ready to build the Hero Page</li>
+        <li>🛠️ Dota SPA: Building the hero page</li>
+        <li>🛠️ Dota SPA: Lore and abilities</li>
+        <li>🛠️ Dota SPA: Routing for Single-page apps</li>
+      </ol>
+
+      <div class="toc__module">
+        <p>🛠️: Practical lessons where we build things. </p>
+      </div>
+
+      <div class="toc__lessons">
+        {%- testimonial 'elmir-halebic' %}
+      </div>
+    </div>
+  </section>

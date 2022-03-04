@@ -1,0 +1,16 @@
+{%- set css -%}
+{%- if env.isDev -%} /css/styles.css {%- endif -%}
+{%- if env.isProd -%} /{{rev.stylesMin or rev.styles}}
+{%- endif -%}
+{%- endset -%}
+
+<!-- CSS -->
+<link rel="stylesheet" href="{{css}}">
+
+<!-- Fonts -->
+<script src="https://use.typekit.net/spy7yqe.js"></script>
+<script>
+  try {
+    Typekit.load({async: true});
+  } catch (e) {}
+</script>
